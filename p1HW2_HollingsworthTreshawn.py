@@ -1,0 +1,21 @@
+print("This program calculates and displays travel expenses")
+bu=float(input("Enter Budget:"))
+
+lo=(input("Enter your travel destination:"))
+('\n') 
+ga=float(input("How much do you think you will spend on gas?"))
+('\n')             
+ac=float(input("Approximately, how much will you need for accomodation/hotel?"))
+('\n')
+fo=float(input("Last, how much do you need for food?"))
+('\n')
+print("------------Travel Expenses------------\n")
+print(f'{"location":15} {"lo":.2f}')              
+print(f'{"Initial Budget":15}${bu:.2f}')
+print(f'{"Fuel":15}${fu:.2f}')                     
+print(f'{"Accomodation":15}${ac:.2f}')    
+print(f'{"Food":15}${fo:.2f}')                    
+print("-----------------------------------------------\n")
+
+
+print("Remaining Balance:",bu-ga-ac-fo)
